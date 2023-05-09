@@ -180,9 +180,9 @@ img {
     padding-left: 1vw;
     padding-right: 1vw;
   }
+  
   img:hover {
     cursor: pointer;
-    transform: scale(1.1, 1.1);
     opacity: 1;
   }
 } ;
