@@ -27,7 +27,7 @@
 
 <p> A web page created using grid. </p>
 
-<p align="center"><img src = "assets/project.png" alt="Project image" height="400"></p>
+<p align="center"><img src = "assets/video.gif" alt="Project image" height="400"></p>
 <br><br>
 Project Link - https://celinxt.github.io/Grid-page/
 
