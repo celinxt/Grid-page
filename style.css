@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Epilogue", sans-serif;
+  font-size: 62.5%;
+  background: #28293e;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3vh;
+
+  margin: 3vh 0 15vh;
+
+  animation: animaHeader 1s ease 0s 1 normal forwards;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #bbb3e5;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 4rem;
+  color: #fff;
+}
+
+span {
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #000;
+
+  background: #fff;
+  border-radius: 1.9rem;
+
+  width: fit-content;
+  padding: 1vh 2vw;
+  margin: 0 0 3vh 0;
+}
+
+p {
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+  bottom: 16vh;
+  left: 6vw;
+
+  font-weight: 800;
+  font-size: 4rem;
+  color: #fff;
+}
+
+#container {
+  max-width: 90vw;
+  margin: auto;
+}
+
+.card {
+  margin-top: -8vh;
+
+  animation: animaCard 1s ease 0s 1 normal forwards;
+}
+
+img {
+  width: 100%;
+  height: 42rem;
+  object-fit: cover;
+
+  border-radius: 0.6rem;
+
+  opacity: 0.6;
+}
+
+/* Animations */
+
+@keyframes animaHeader {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 0;
+    transform: translateY(-250px);
+  }
+
+  38% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  55% {
+    animation-timing-function: ease-in;
+    transform: translateY(-65px);
+  }
+
+  72% {
+    animation-timing-function: ease-out;
+    transform: translateY(0);
+  }
+
+  81% {
+    animation-timing-function: ease-in;
+    transform: translateY(-28px);
+  }
+
+  90% {
+    animation-timing-function: ease-out;
+    transform: translateY(0);
+  }
+
+  95% {
+    animation-timing-function: ease-in;
+    transform: translateY(-8px);
+  }
+
+  100% {
+    animation-timing-function: ease-out;
+    transform: translateY(0);
+  }
+}
+
+@keyframes animaCard {
+  0% {
+    opacity: 0;
+    transform: translateX(-250px) rotate(-200deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0) rotate(0deg);
+  }
+}
+
+/* Desktop */
+
+@media (min-width: 700px) {
+  header {
+    margin: 7vh 0 20vh;
+  }
+
+  #container {
+    display: grid;
+    grid-template-areas: "A A B" "C D D";
+    gap: 1vw;
+  }
+
+  #container div:nth-child(1) {
+    grid-area: A;
+  }
+
+  #container div:nth-child(2) {
+    grid-area: B;
+  }
+
+  #container div:nth-child(3) {
+    grid-area: C;
+  }
+
+  #container div:nth-child(4) {
+    grid-area: D;
+  }
+
+  .card {
+    margin-top: -12vh;
+  }
+
+  p {
+    left: 2vw;
+  }
+
+  span {
+    padding-left: 1vw;
+    padding-right: 1vw;
+  }
+  img:hover {
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+    opacity: 1;
+  }
+} ;
